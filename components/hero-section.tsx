@@ -1,0 +1,29 @@
+import { Mail } from "lucide-react";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
+
+const HeroSection = () => {
+    return ( 
+        <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-8 md:py-10 py-7 bg-[url('/bg-image.png')] " >
+            <div className="flex flex-col mx-auto md:gap-10 gap-16 inter " >
+            <div className=" text-center text-white text-7xl font-extrabold capitalize leading-10">
+                The fastest way for startups <br /> to do any analysis
+            </div>
+            <div className="opacity-80 text-center text-white text-xl font-medium leading-loose">\
+                Equals is the only spreadsheet with built-in connections to any database, versioning, and collaboration.
+            </div>
+            <div className="flex bg-white " >
+                <div className="flex gap-3" >
+                    <Mail />
+                    <Input  placeholder="Enter your email " />
+                </div>
+                <Button className='rounded-3xl  bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white font-semibold text-base' size='default' >
+                    Start for free
+                </Button>
+            </div>
+            </div>
+        </div>
+     );
+}
+ 
+export default HeroSection;
