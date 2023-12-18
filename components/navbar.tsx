@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
 const Navbar = () => {
     return (
-        <div className="h-16 lg:px-20 md:px-14 flex items-center justify-between bg-gradient-to-r from-blue-500 to-blue-800 " >
+        <div className="h-16 lg:px-20 md:px-14 px-8 flex items-center justify-between bg-gradient-to-r from-blue-500 to-blue-800 " >
             <div className="text-white text-xl font-semibold inter ">
                 Saasify
             </div>
@@ -22,12 +22,12 @@ const Navbar = () => {
                 {/* Responsive Navbar / Hambergur Menu */}
                 <Sheet>
                     <SheetTrigger asChild>
-                        <Button size='icon' className='md:hidden bg-transparent text-white hover:text-white/75' >
+                        <Button size='icon' className='md:hidden bg-transparent hover:bg-transparent text-white hover:text-white/75' >
                             <Menu />
                         </Button>
                     </SheetTrigger>
-                    <SheetContent>
-                        <div className="flex flex-col gap-5 items-center text-white text-base font-normal inter  ">
+                    <SheetContent className='bg-gradient-to-r from-blue-500 to-blue-800' >
+                        <div className="flex flex-col gap-5 items-center text-white text-base font-normal inter pt-3 ">
                             <p>Product</p>
                             <p>Solution</p>
                             <p>Customer</p>
