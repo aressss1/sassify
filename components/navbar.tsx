@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="text-white text-xl font-semibold inter ">
                 Saasify
             </div>
-            <div className="hidden md:flex gap-5 items-center text-white text-base font-normal inter  ">
+            <div className="hidden md:flex gap-5 items-center text-white text-base font-light inter  ">
                 <p>Product</p>
                 <p>Solution</p>
                 <p>Customer</p>
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <p>About us</p>
             </div>
             <div className='flex gap-2 items-center ' >
-                <Button className='rounded-3xl bg-white hover:bg-white/80 text-black font-semibold text-lg' size='default' >
+                <Button className='rounded-3xl bg-white hover:bg-white/80 text-black font-semibold text-base' size='default' >
                     Sign up
                 </Button>
                 {/* Responsive Navbar / Hambergur Menu */}
@@ -27,7 +27,7 @@ const Navbar = () => {
                         </Button>
                     </SheetTrigger>
                     <SheetContent className='bg-gradient-to-r from-blue-500 to-blue-800' >
-                        <div className="flex flex-col gap-5 items-center text-white text-base font-normal inter pt-3 ">
+                        <div className="flex flex-col gap-14 items-center text-white text-base font-medium inter pt-14 ">
                             <p>Product</p>
                             <p>Solution</p>
                             <p>Customer</p>
