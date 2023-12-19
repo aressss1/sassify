@@ -3,7 +3,6 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
-{/* <div className="bg-[url('/bg-image.png')] h-[72rem]" /> */ }
 const HeroSection = () => {
     return (
                 <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10 relative " >

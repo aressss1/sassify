@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 export default function Home() {
   return (
     <>
-      <div className="bg-[url('/bg-image.png')] lg:h-[72rem] md:[45rem] " >
+      <div className="lg:bg-[url('/bg-image.png')] lg:h-[72rem] " >
         <Navbar />
         <HeroSection />
       </div>
