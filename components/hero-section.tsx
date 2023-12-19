@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const HeroSection = () => {
     return (
-        <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10 bg-gradient-to-r from-blue-500 to-blue-800 lg:bg-none  " >
+        <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-4 py-10 bg-gradient-to-r from-blue-500 to-blue-800 lg:bg-none  " >
             <div className="flex flex-col items-center justify-center pt-20 md:gap-6 gap-5 inter  " >
-                <div className=" text-center text-white lg:text-6xl md:text-4xl text-lg font-extrabold capitalize lg:leading-[4.5rem]">
+                <div className=" text-center text-white lg:text-6xl md:text-4xl text-xl font-extrabold capitalize lg:leading-[4.5rem]">
                     The fastest way for startups <br /> to do any analysis
                 </div>
-                <div className="lg:px-56 md:px-28 px-4  opacity-80 text-center text-white lg:text-xl md:text-base text-xs font-medium leading-normal">
+                <div className="lg:px-56 md:px-28 px-5  opacity-80 text-center text-white lg:text-xl md:text-base text-xs font-medium leading-normal">
                     Equals is the only spreadsheet with built-in connections to any database, versioning, and collaboration.
                 </div>
                 <div className="flex bg-white md:w-96 w-[17rem]  md:p-2 p-1 rounded-3xl " >
