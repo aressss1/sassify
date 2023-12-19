@@ -17,7 +17,7 @@ const HeroSection = () => {
                     <div className="flex bg-white lg:w-96 p-2 rounded-3xl " >
                         <div className="flex items-center pl-3" >
                             <Mail className="text-muted-foreground" />
-                            <Input placeholder="Enter your email " className="focus:outline-0" />
+                            <Input placeholder="Enter your email " className="focus:outline-0 focus-visible:ring-offset-transparent " />
                         </div>
                         <Button className='rounded-3xl  bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white font-semibold text-base' size='default' >
                             Start for free
