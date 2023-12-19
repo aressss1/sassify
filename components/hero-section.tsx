@@ -6,7 +6,7 @@ import Image from "next/image";
 const HeroSection = () => {
     return (
         <>
-            <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-8 py-10  bg-[url('/bg-image.png')] " >
+            <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10  bg-[url('/bg-image.png')] " >
                 <div className="flex flex-col items-center justify-center pt-20 md:gap-6  inter " >
                     <div className=" text-center text-white text-6xl font-extrabold capitalize lg:leading-[4.5rem]">
                         The fastest way for startups <br /> to do any analysis
@@ -24,10 +24,11 @@ const HeroSection = () => {
                         </Button>
                     </div>
                 </div>
-                <div>
+                <div className="shadow-2xl " >
                     <Image
                         src="/hero-image-3.png"
                         alt="dasboard"
+                        className="rounded-lg w-[75rem] "
                     />
                 </div>
             </div>
