@@ -6,8 +6,6 @@ import Image from "next/image";
 {/* <div className="bg-[url('/bg-image.png')] h-[72rem]" /> */ }
 const HeroSection = () => {
     return (
-        <>
-            <div className="bg-[url('/bg-image.png')] h-[72rem]" >
                 <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10 relative " >
                     <div className="flex flex-col items-center justify-center pt-20 md:gap-6 inter  " >
                         <div className=" text-center text-white text-6xl font-extrabold capitalize lg:leading-[4.5rem]">
@@ -34,8 +32,6 @@ const HeroSection = () => {
                         />
                     </div>
                 </div>
-            </div>
-        </>
     );
 }
 

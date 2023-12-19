@@ -2,9 +2,10 @@ import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 
+// bg-gradient-to-r from-blue-500 to-blue-800
 const Navbar = () => {
     return (
-        <div className="h-16 lg:px-20 md:px-14 px-8 flex items-center justify-between bg-gradient-to-r from-blue-500 to-blue-800 " >
+        <div className="h-16 lg:px-20 md:px-14 px-8 flex items-center justify-between" >
             <div className="text-white text-xl font-semibold inter ">
                 Saasify
             </div>
