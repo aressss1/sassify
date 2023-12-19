@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
             <div>
                 <Image 
-                    src="/her0-image.jpg"
+                    src="/hero-image.jpg"
                     alt="dasboard"
                 />
             </div>
