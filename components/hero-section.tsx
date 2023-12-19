@@ -3,12 +3,11 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
+{/* <div className="bg-[url('/bg-image.png')] h-48" /> */}
 const HeroSection = () => {
     return (
-        <>
-            <div className="bg-[url('/bg-image.png')] h-48" />
-            <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10 " >
-                <div className="flex flex-col items-center justify-center pt-20 md:gap-6  inter " >
+            <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10 relative " >
+                <div className="flex flex-col items-center justify-center pt-20 md:gap-6 inter bg-[url('/bg-image.png')] h-[72rem] " >
                     <div className=" text-center text-white text-6xl font-extrabold capitalize lg:leading-[4.5rem]">
                         The fastest way for startups <br /> to do any analysis
                     </div>
@@ -33,7 +32,6 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-        </>
     );
 }
 
