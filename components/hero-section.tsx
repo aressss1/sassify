@@ -24,13 +24,14 @@ const HeroSection = () => {
                         </Button>
                     </div>
                 </div>
+                <div>
+                    <Image
+                        src="/hero-image.jpg"
+                        alt="dasboard"
+                    />
+                </div>
             </div>
-            <div>
-                <Image
-                    src="/hero-image.jpg"
-                    alt="dasboard"
-                />
-            </div>
+
         </>
     );
 }
