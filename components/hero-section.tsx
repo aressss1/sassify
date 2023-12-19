@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
     return (
-        <>
-            <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10  bg-[url('/bg-image.png')] " >
+        <div className="flex flex-col gap-20  lg:px-20 md:px-14 px-8 py-10 bg-gradient-to-r from-blue-500 to-blue-800   " >
+                {/* bg-[url('/bg-image.png')] */}
                 <div className="flex flex-col items-center justify-center pt-20 md:gap-6  inter " >
                     <div className=" text-center text-white text-6xl font-extrabold capitalize lg:leading-[4.5rem]">
                         The fastest way for startups <br /> to do any analysis
@@ -32,8 +32,6 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-
-        </>
     );
 }
 
