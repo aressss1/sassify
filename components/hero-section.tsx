@@ -4,8 +4,8 @@ import { Button } from "./ui/button";
 
 const HeroSection = () => {
     return (
-        <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-8 md:py-10 py-7 bg-[url('/bg-image.png')] " >
-            <div className="flex flex-col items-center justify-center mx-auto md:gap-10 gap-16 inter " >
+        <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-8 md:py-10 py-24 bg-[url('/bg-image.png')] " >
+            <div className="flex flex-col items-center justify-center  md:gap-6  inter " >
                 <div className=" text-center text-white text-6xl font-extrabold capitalize lg:leading-[4.5rem]">
                     The fastest way for startups <br /> to do any analysis
                 </div>
