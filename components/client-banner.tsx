@@ -4,23 +4,23 @@ const ClientBanner = () => {
     const client = [
         {
             name:"slack",
-            imgSrc: "/client/c-12.png"
+            imgSrc: "/client/c-12.svg"
         },
         {
             name:"airbnb",
-            imgSrc: "/client/c-2.png"
+            imgSrc: "/client/c-2.svg"
         },
         {
             name:"amazon",
-            imgSrc: "/client/c-3.png"
+            imgSrc: "/client/c-3.svg"
         },
         {
             name:"google",
-            imgSrc: "/client/c-4.png"
+            imgSrc: "/client/c-4.svg"
         },
         {
             name:"netflix",
-            imgSrc: "/client/c-5.png"
+            imgSrc: "/client/c-5.svg"
         },
     ]
 
