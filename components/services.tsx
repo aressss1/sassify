@@ -26,7 +26,7 @@ const Services = () => {
             <div className="text-center text-black lg:text-5xl md:text-4xl text-xl font-bold inter capitalize ">
                 Our services made <br /> for you?
             </div>
-            <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto " >
+            <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto px-5 " >
                 {servicesContent.map((service) => (
                     <div key={service.title} className="group" >
                     <Card className="flex flex-col lg:gap-4 gap-3 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-auto group-hover:bg-blue-700" >
