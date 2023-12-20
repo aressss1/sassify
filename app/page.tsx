@@ -1,5 +1,6 @@
 import HeroSection from "@/components/hero-section";
 import Navbar from "../components/navbar";
+import ClientBanner from "@/components/client-banner";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
       </div>
+      <ClientBanner />
     </>
   )
 }
