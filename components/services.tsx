@@ -36,11 +36,11 @@ const Services = () => {
                             alt="service"
                             className="lg:h-[60px] h-[50px]"
                         />
-                        <div className="text-black lg:text-2xl md:text-lg font-bold inter md:text-center ">
+                        <div className="text-black group-hover:text-white lg:text-2xl md:text-lg font-bold inter md:text-center ">
                             {service.title}
                         </div>
                     </CardHeader>
-                    <CardDescription className=" w-[213px] md:w-auto opacity-70 text-center text-black lg:text-base md:text-sm font-medium inter ">
+                    <CardDescription className=" w-[213px] md:w-auto opacity-70 text-center text-black group-hover:text-white lg:text-base md:text-sm font-medium inter ">
                             {service.description}
                     </CardDescription>
                     <CardFooter className="flex justify-center lg:p-6 md:p-4 p-2" >
