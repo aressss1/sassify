@@ -26,7 +26,7 @@ const Services = () => {
             <div className="text-center text-black text-5xl font-bold inter capitalize ">
                 Our services made <br /> for you?
             </div>
-            <div className="flex flex-row gap-12" >
+            <div className="flex flex-row gap-12 overflow-y-auto " >
                 {servicesContent.map((service) => (
                     <Card key={service.title}  className="flex flex-col gap-4  p-3  shadow-2xl  rounded-xl  " >
                     <CardHeader className="flex flex-col gap-3 items-center justify-center" >
@@ -34,11 +34,11 @@ const Services = () => {
                             src={service.imgSrc}
                             alt="service"
                         />
-                        <div className="text-black text-2xl font-bold inter ">
+                        <div className="text-black lg:text-2xl md:text-lg font-bold inter ">
                             {service.title}
                         </div>
                     </CardHeader>
-                    <CardDescription className=" opacity-70 text-center text-black text-base font-medium inter ">
+                    <CardDescription className=" opacity-70 text-center text-black md:text-base font-medium inter ">
                             {service.description}
                     </CardDescription>
                     <CardFooter className="flex justify-center pt-6" >
