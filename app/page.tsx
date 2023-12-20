@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import ClientBanner from "@/components/client-banner";
 import Services from "@/components/services";
 import Section1 from "@/components/section-1";
+import Section2 from "@/components/section-2";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ClientBanner />
       <Services />
       <Section1 />
+      <Section2 />
     </>
   )
 }
