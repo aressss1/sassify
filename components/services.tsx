@@ -23,7 +23,7 @@ const Services = () => {
 
     return ( 
         <div className="flex flex-col gap-24 lg:px-20 md:px-14 px-4 py-6 m " >
-            <div className="text-center text-black text-5xl font-bold inter capitalize tracking-tight">
+            <div className="text-center text-black text-5xl font-bold inter capitalize ">
                 Our services made <br /> for you?
             </div>
             <div className="flex flex-row gap-4" >
