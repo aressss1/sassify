@@ -22,13 +22,13 @@ const Services = () => {
     ]
 
     return ( 
-        <div className="flex flex-col gap-4 lg:px-20 md:px-14 px-4 py-6" >
+        <div className="flex flex-col gap-24 lg:px-20 md:px-14 px-4 py-6 m " >
             <div className="text-center text-black text-5xl font-bold inter capitalize tracking-tight">
                 Our services made <br /> for you?
             </div>
             <div className="flex flex-row gap-4" >
                 {servicesContent.map((service) => (
-                    <Card key={service.title}  className="p-3 gap-2 shadow-xl " >
+                    <Card key={service.title}  className="flex flex-col gap-4  p-3  shadow-xl " >
                     <CardHeader className="flex flex-col gap-3 items-center justify-center" >
                         <Image
                             src={service.imgSrc}
