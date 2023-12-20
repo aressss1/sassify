@@ -31,7 +31,7 @@ const ClientBanner = () => {
                     key={client.name}
                     src={client.imgSrc}
                     alt={client.name}
-                    className="lg:h-14 md:h-8 h-4 shadow-inner "
+                    className="lg:h-12 md:h-8 h-4  "
                 />
             ))}
         </div>
