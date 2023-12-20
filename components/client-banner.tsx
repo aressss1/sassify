@@ -4,7 +4,8 @@ const ClientBanner = () => {
     const client = [
         {
             name:"slack",
-            imgSrc: "/client/c-1.png"
+            // imgSrc: "/client/c-1.png"
+            imgSrc: "/client/image 3.svg"
         },
         {
             name:"airbnb",
