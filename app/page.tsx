@@ -1,5 +1,5 @@
 import HeroSection from "@/components/hero-section";
-import Navbar from "../components/navbar";
+import Navbar from "@/components/navbar";
 import ClientBanner from "@/components/client-banner";
 import Services from "@/components/services";
 import Section1 from "@/components/section-1";
