@@ -43,7 +43,7 @@ const Services = () => {
                             {service.description}
                     </CardDescription>
                     <CardFooter className="flex justify-center lg:p-6 md:p-4 p-2" >
-                        <div className="flex flex-row gap-2 text-blue-800 text-base font-semibold inter ">
+                        <div className="flex flex-row gap-2 text-blue-800 lg:text-base text-sm font-semibold inter ">
                             Read More
                             <MoveRight />
                         </div>
