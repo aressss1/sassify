@@ -28,7 +28,7 @@ const Services = () => {
             </div>
             <div className="flex flex-row gap-12" >
                 {servicesContent.map((service) => (
-                    <Card key={service.title}  className="flex flex-col gap-4  p-3  shadow-xl  rounded-xl  " >
+                    <Card key={service.title}  className="flex flex-col gap-4  p-3  shadow-2xl  rounded-xl  " >
                     <CardHeader className="flex flex-col gap-3 items-center justify-center" >
                         <Image
                             src={service.imgSrc}
@@ -41,7 +41,7 @@ const Services = () => {
                     <CardDescription className=" opacity-70 text-center text-black text-base font-medium inter ">
                             {service.description}
                     </CardDescription>
-                    <CardFooter className="flex justify-center" >
+                    <CardFooter className="flex justify-center pt-6" >
                         <div className="flex flex-row gap-2 text-blue-800 text-base font-semibold inter ">
                             Read More
                             <MoveRight />
