@@ -4,8 +4,7 @@ const ClientBanner = () => {
     const client = [
         {
             name:"slack",
-            // imgSrc: "/client/c-1.png"
-            imgSrc: "/client/image 3.svg"
+            imgSrc: "/client/c-1.png"
         },
         {
             name:"airbnb",
@@ -26,13 +25,13 @@ const ClientBanner = () => {
     ]
 
     return ( 
-        <div className="flex flex-row justify-between lg:px-20 md:px-14 px-4 h-24 lg:my-56  " >
+        <div className="flex flex-row justify-between lg:px-20 md:px-14 px-4 h-24 lg:mt-60 mb-8  " >
             {client.map((client) => (
                 <Image
                     key={client.name}
                     src={client.imgSrc}
                     alt={client.name}
-                    className="h-10 shadow-xl"
+                    className="h-14"
                 />
             ))}
         </div>
