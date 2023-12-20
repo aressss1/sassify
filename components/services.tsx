@@ -28,8 +28,8 @@ const Services = () => {
             </div>
             <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto " >
                 {servicesContent.map((service) => (
-                    <Card key={service.title}  className="flex flex-col gap-4  lg:p-3 p-2  shadow-2xl  rounded-xl  " >
-                    <CardHeader className="flex flex-col gap-3 items-center justify-center lg:p-6 md:p-4 p-2  " >
+                    <Card key={service.title}  className="flex flex-col lg:gap-4 md:gap-2 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-auto " >
+                    <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-center justify-center lg:p-6 md:p-4 p-2  " >
                         <Image
                             src={service.imgSrc}
                             alt="service"
@@ -39,7 +39,7 @@ const Services = () => {
                             {service.title}
                         </div>
                     </CardHeader>
-                    <CardDescription className=" opacity-70 text-center text-black lg:text-base md:text-sm font-medium inter ">
+                    <CardDescription className=" w-[213px] md:w-auto opacity-70 text-center text-black lg:text-base md:text-sm font-medium inter ">
                             {service.description}
                     </CardDescription>
                     <CardFooter className="flex justify-center lg:p-6 md:p-4 p-2" >
