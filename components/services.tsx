@@ -22,13 +22,13 @@ const Services = () => {
     ]
 
     return ( 
-        <div className="flex flex-col gap-16 lg:px-20 md:px-14 px-4 py-6  " >
-            <div className="text-center text-black lg:text-5xl md:text-4xl font-bold inter capitalize ">
+        <div className="flex flex-col gap-16 lg:px-20 md:px-14 px-4 md:py-6 py-  " >
+            <div className="text-center text-black lg:text-5xl md:text-4xl text-xl font-bold inter capitalize ">
                 Our services made <br /> for you?
             </div>
             <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto " >
                 {servicesContent.map((service) => (
-                    <Card key={service.title}  className="flex flex-col lg:gap-4 md:gap-2 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-auto " >
+                    <Card key={service.title}  className="flex flex-col lg:gap-4 gap-3 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-auto " >
                     <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-center justify-center lg:p-6 md:p-4 p-2  " >
                         <Image
                             src={service.imgSrc}

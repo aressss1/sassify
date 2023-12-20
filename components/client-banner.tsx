@@ -25,7 +25,7 @@ const ClientBanner = () => {
     ]
 
     return ( 
-        <div className="flex flex-row justify-between lg:px-20 md:px-14 px-4 h-24 lg:mt-64 md:mt-16 mt-12 mb-16  " >
+        <div className="flex flex-row justify-between lg:px-20 md:px-14 px-4  lg:mt-64 md:mt-16 mt-12 mb-16  " >
             {client.map((client) => (
                 <Image
                     key={client.name}
