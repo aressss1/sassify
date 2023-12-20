@@ -26,9 +26,9 @@ const Services = () => {
             <div className="text-center text-black text-5xl font-bold inter capitalize ">
                 Our services made <br /> for you?
             </div>
-            <div className="flex flex-row gap-4" >
+            <div className="flex flex-row gap-12" >
                 {servicesContent.map((service) => (
-                    <Card key={service.title}  className="flex flex-col gap-4  p-3  shadow-xl " >
+                    <Card key={service.title}  className="flex flex-col gap-4  p-3  shadow-xl  rounded-xl  " >
                     <CardHeader className="flex flex-col gap-3 items-center justify-center" >
                         <Image
                             src={service.imgSrc}
