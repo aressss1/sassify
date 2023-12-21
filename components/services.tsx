@@ -7,7 +7,7 @@ const Services = () => {
         {
             imgSrc: "/icons/i-1.png",
             title: "Task Management",
-            description: "The process of managing a task through its life cycle."
+            description: "The process of managing a task through its life cycle. It involves planning, testing, tracking."
         },
         {
             imgSrc: "/icons/i-2.png",
