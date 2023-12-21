@@ -30,15 +30,15 @@ const Section2 = () => {
                     Get Started Now
                 </Button>
             </div>
-            <div className="flex md:flex-row flex-col-reverse justify-between pt-20 " >
+            <div className="flex md:flex-row flex-col-reverse justify-between md:pt-20 pt-16 gap-7 md:gap-0" >
                 <div className="flex flex-col items-center justify-center gap-5" >
                     {boardingPrcoess.map((step) => (
-                        <div key={step.stepName} className="flex  justify-start  " >
-                            <div >
+                        <div key={step.stepName} className="flex  justify-start gap-[10px]  " >
+                            <div className="self-center" >
                                 <Image 
                                     src={step.stepImageSrc}
                                     alt="step"
-                                    className="lg:h-20 md:h-[60px] h-10"
+                                    className="lg:h-20 md:h-[60px] h-10 w-[60px] md:w-auto"
                                 />
                             </div>
                             <div className="flex flex-col justify-start lg:w-[25rem] md:w-72 " >
