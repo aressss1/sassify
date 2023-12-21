@@ -30,7 +30,7 @@ const Section2 = () => {
                     Get Started Now
                 </Button>
             </div>
-            <div className="flex md:flex-row flex-col-reverse justify-between md:pt-20 pt-16 gap-7 md:gap-0" >
+            <div className="flex md:flex-row flex-col-reverse justify-between md:pt-20 pt-16 gap-7 lg:gap-0" >
                 <div className="flex flex-col items-center justify-center gap-5" >
                     {boardingPrcoess.map((step) => (
                         <div key={step.stepName} className="flex  justify-start gap-[10px]  " >
