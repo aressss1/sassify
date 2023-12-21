@@ -19,6 +19,7 @@ const Section1 = () => {
                 <Image 
                     src="/section-image.png"
                     alt="section-image"
+                    className="h-80 md:h-auto"
                 />
             </div>
         </div>

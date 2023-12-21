@@ -23,10 +23,10 @@ const Services = () => {
 
     return ( 
         <div className="flex flex-col gap-16 lg:px-20 md:px-14 px-4  lg:py-20 md:py-6  " >
-            <div className="text-center text-black lg:text-5xl md:text-4xl text-xl font-bold inter capitalize ">
+            <div className="text-center text-black lg:text-5xl md:text-4xl text-2xl font-bold inter capitalize ">
                 Our services made <br /> for you?
             </div>
-            <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto px-5 no-scrollbar " >
+            <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto px-5 no-scrollbar pb-10 " >
                 {servicesContent.map((service) => (
                     <div key={service.title} className="group" >
                     <Card className="flex flex-col lg:gap-4 gap-3 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700" >
