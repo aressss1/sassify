@@ -33,7 +33,7 @@ const ReviewSection = () => {
                 {reviewsContent.map((review) => (
                     <div key={review.name} className="group" >
                     <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700" >
-                    <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-start lg:p-6 md:p-4 p-2  " >
+                    <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-start lg:p-6 p-4   " >
                         <Image
                             src="/star.png"
                             alt="rating"
@@ -49,7 +49,7 @@ const ReviewSection = () => {
                             alt={review.name}
                         />
                         <div className="flex flex-col ">
-                            <div className="text-black group-hover:text-white  md:text-base  text-sm font-bold inter">
+                            <div className="text-black group-hover:text-white  lg:text-base  text-sm  font-bold inter">
                                 {review.name}
                             </div>
                             <div className="opacity-70 text-black group-hover:text-white text-sm font-normal ">
