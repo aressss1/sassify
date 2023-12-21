@@ -37,10 +37,10 @@ const ReviewSection = () => {
                         <Image
                             src="/star.png"
                             alt="rating"
-                            className="lg:h-[18px] h-auto"
+                            className="lg:h-[18px] h-auto group-hover:text-white"
                         />
                     </CardHeader>
-                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto opacity-70 text-left text-black group-hover:text-white lg:text-base md:text-sm font-medium inter lg:px-6 md:px-4 px-2 ">
+                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto text-left text-black group-hover:text-white lg:text-base md:text-sm font-medium inter lg:px-6 md:px-4 px-2 ">
                             {review.review}
                     </CardDescription>
                     <CardFooter className="flex gap-2 justify-start lg:p-6 md:p-4 p-2" >
@@ -48,11 +48,11 @@ const ReviewSection = () => {
                             src={review.imgSrc}
                             alt={review.name}
                         />
-                        <div className="flex flex-col  ">
-                            <div className="text-black md:text-base  text-sm font-bold inter">
+                        <div className="flex flex-col ">
+                            <div className="text-black group-hover:text-white  md:text-base  text-sm font-bold inter">
                                 {review.name}
                             </div>
-                            <div className="opacity-70 text-black text-sm font-normal ">
+                            <div className="opacity-70 text-black group-hover:text-white text-sm font-normal ">
                                 {review.location}
                             </div>
                         </div>
