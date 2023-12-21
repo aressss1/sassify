@@ -32,15 +32,15 @@ const ReviewSection = () => {
             <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto px-5 no-scrollbar pb-10 " >
                 {reviewsContent.map((review) => (
                     <div key={review.name} className="group" >
-                    <Card className="flex flex-col lg:gap-4 gap-3 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700" >
-                    <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-center justify-start lg:p-6 md:p-4 p-2  " >
+                    <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700" >
+                    <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-start lg:p-6 md:p-4 p-2  " >
                         <Image
                             src="/star.png"
                             alt="rating"
-                            // className="lg:h-[60px] h-[50px]"
+                            className="lg:h-[18px] h-auto"
                         />
                     </CardHeader>
-                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto opacity-70 text-left text-black group-hover:text-white lg:text-base md:text-sm font-medium inter ">
+                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto opacity-70 text-left text-black group-hover:text-white lg:text-base md:text-sm font-medium inter lg:px-6 md:px-4 px-2 ">
                             {review.review}
                     </CardDescription>
                     <CardFooter className="flex gap-2 justify-start lg:p-6 md:p-4 p-2" >
@@ -48,7 +48,7 @@ const ReviewSection = () => {
                             src={review.imgSrc}
                             alt={review.name}
                         />
-                        <div className="flex flex-col gap-2 ">
+                        <div className="flex flex-col  ">
                             <div className="text-black md:text-base  text-sm font-bold inter">
                                 {review.name}
                             </div>
