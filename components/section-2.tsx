@@ -4,17 +4,17 @@ import { Button } from "./ui/button";
 const Section2 = () => {
     const boardingPrcoess = [
         {
-            stepImageSrc: "/1.png",
+            stepImageSrc: "/step-1.png",
             stepName: "Create Account",
             stepDescription: "After learning about your customer service needs, we will get you up"
         },
         {
-            stepImageSrc: "/2.png",
+            stepImageSrc: "/step-2.png",
             stepName: "Install tracking code",
             stepDescription: "After learning about your customer service needs, we will get you up"
         },
         {
-            stepImageSrc: "/3.png",
+            stepImageSrc: "/step-3.png",
             stepName: "Track analytics",
             stepDescription: "After learning about your customer service needs, we will get you up "
         },
@@ -33,14 +33,14 @@ const Section2 = () => {
             <div className="flex flex-row justify-between pt-24 " >
                 <div className="flex flex-col items-center justify-center gap-5" >
                     {boardingPrcoess.map((step) => (
-                        <div key={step.stepName} className="flex items-start justify-center " >
-                            <div className="w-20 h-12 bg-white rounded-full text-center " >
+                        <div key={step.stepName} className="flex  justify-start  " >
+                            <div className="w-20 h-12 " >
                                 <Image 
                                     src={step.stepImageSrc}
                                     alt="step"
                                 />
                             </div>
-                            <div className="flex flex-col justify-start" >
+                            <div className="flex flex-col justify-start w-[25rem]" >
                                 <div className="text-white text-2xl font-bold inter">
                                     {step.stepName}
                                 </div>
