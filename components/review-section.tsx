@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Card, CardDescription, CardFooter, CardHeader } from "./ui/card";
+import { Star } from 'lucide-react';
 
 const ReviewSection = () => {
     const reviewsContent = [
@@ -32,15 +33,20 @@ const ReviewSection = () => {
             <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto px-5 no-scrollbar pb-10 " >
                 {reviewsContent.map((review) => (
                     <div key={review.name} className="group" >
-                    <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700" >
-                    <CardHeader className="flex flex-col lg:gap-3 md:gap-0 items-start lg:p-6 p-4   " >
-                        <Image
+                    <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700 group-hover:shadow-2xl " >
+                    <CardHeader className="flex flex-row justify-center lg:gap-3 md:gap-0 items-start lg:p-6 p-4 text-blue-800   " >
+                        {/* <Image
                             src="/star.png"
                             alt="rating"
                             className="lg:h-[18px] h-auto group-hover:text-white"
-                        />
+                        /> */}
+                        <Star />
+                        <Star />
+                        <Star />
+                        <Star />
+                        <Star />
                     </CardHeader>
-                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto text-left text-black group-hover:text-white lg:text-base md:text-sm font-medium inter lg:px-6 md:px-4 px-2 ">
+                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto text-left text-black group-hover:text-white lg:text-base md:text-sm font-normal inter lg:px-6 md:px-4 px-2 ">
                             {review.review}
                     </CardDescription>
                     <CardFooter className="flex gap-2 justify-start lg:p-6 md:p-4 p-2" >
@@ -49,7 +55,7 @@ const ReviewSection = () => {
                             alt={review.name}
                         />
                         <div className="flex flex-col ">
-                            <div className="text-black group-hover:text-white  lg:text-base  text-sm  font-bold inter">
+                            <div className="text-black group-hover:text-white  lg:text-base  text-sm  font-semibold inter">
                                 {review.name}
                             </div>
                             <div className="opacity-70 text-black group-hover:text-white text-sm font-normal ">
