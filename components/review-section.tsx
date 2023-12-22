@@ -30,7 +30,7 @@ const ReviewSection = () => {
             <div className="text-center text-black lg:text-5xl md:text-4xl text-2xl font-bold inter capitalize ">
             What people are saying about us
             </div>
-            <div className="flex lg:flex-row lg:gap-12 gap-4 overflow-y-auto px-5 no-scrollbar pb-10 " >
+            <div className="flex lg:flex-row text- lg:gap-12 gap-4 overflow-y-auto px-5 no-scrollbar pb-10 " >
                 {reviewsContent.map((review) => (
                     <div key={review.name} className="group" >
                     <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700 group-hover:shadow-2xl " >

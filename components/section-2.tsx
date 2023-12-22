@@ -45,7 +45,7 @@ const Section2 = () => {
                                 <div className="text-white lg:text-2xl text-xl font-bold inter">
                                     {step.stepName}
                                 </div>
-                                <div className=" opacity-80 text-white lg:text-lg md:text-base text-sm font-medium inter ">
+                                <div className=" opacity-80 text-white text-base text-sm font-medium inter ">
                                     {step.stepDescription}
                                 </div>
                             </div>
