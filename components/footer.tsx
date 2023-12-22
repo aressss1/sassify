@@ -15,13 +15,14 @@ const Footer = () => {
                             Get Started Now
                         </Button>
                     </div>
-                    <Separator className=" text-white text-opacity-70" />
                 </div>
+
+                <Separator className=" text-white text-opacity-70" />
 
                 {/* Footer */}
                 <div className="lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-24" >
 
-                    <div className="flex flex-col lg:gap-4 gap-3 col-span-2 " >
+                    <div className="flex flex-col lg:gap-4 gap-3 " >
                         <div className="text-white lg:text-xl md:text-base text-sm font-bold  ">
                             Sassify
                         </div>
