@@ -23,7 +23,7 @@ const Section2 = () => {
     return (
         <div className="bg-[url('/gradient.png')] lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 flex flex-col " >
             <div className="flex justify-between" >
-                <div className=" text-white lg:text-5xl md:text-3xl text-2xl font-bold inter ">
+                <div className=" text-white lg:text-5xl md:text-3xl text-2xl font-bold inter capitalize">
                     Work smarter<br />with easy access for user.
                 </div>
                 <Button className='md:w-40 w-28  rounded-3xl bg-white hover:bg-white text-blue-800 hover:text-blue-800/75 font-semibold md:text-base text-xs' size='default' >
