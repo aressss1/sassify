@@ -34,17 +34,12 @@ const ReviewSection = () => {
                 {reviewsContent.map((review) => (
                     <div key={review.name} className="group" >
                     <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700 group-hover:shadow-2xl " >
-                    <CardHeader className="flex flex-row justify-center lg:gap-3 md:gap-0 items-start lg:p-6 p-4 text-blue-800   " >
-                        {/* <Image
+                    <CardHeader className="flex flex-row justify-center lg:gap-3 md:gap-0 items-start lg:p-6 p-4 text-blue-800 group-hover:text-white  " >
+                        <Image
                             src="/star.png"
                             alt="rating"
                             className="lg:h-[18px] h-auto group-hover:text-white"
-                        /> */}
-                        <Star />
-                        <Star />
-                        <Star />
-                        <Star />
-                        <Star />
+                        />
                     </CardHeader>
                     <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto text-left text-black group-hover:text-white lg:text-base md:text-sm font-normal inter lg:px-6 md:px-4 px-2 ">
                             {review.review}
