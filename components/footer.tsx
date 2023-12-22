@@ -3,9 +3,9 @@ import { Separator } from "@/components/ui/separator"
 
 const Footer = () => {
     return (
-            <div className="bg-[url('/gradient.png')]" >
+            <div className="" >
 
-                <div className="lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 flex flex-col" >
+                <div className="bg-[url('/gradient.png')] lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 flex flex-col" >
                     {/* Banner */}
                     <div className="flex flex-col justify-center items-center md:p-10 md:gap-7 gap-4 " >
                         <div className="text-center text-white lg:text-6xl md:text-4xl text-2xl  font-extrabold inter lg:leading-[3.5rem] md:leading-10 leading-7 ">
@@ -20,7 +20,7 @@ const Footer = () => {
                 <Separator className=" text-white text-opacity-70" />
 
                 {/* Footer */}
-                <div className="lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-24" >
+                <div className=" bg-[url('/gradient.png')] lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-24 md:gap-16 gap-8 " >
 
                     <div className="flex flex-col lg:gap-4 gap-3 " >
                         <div className="text-white lg:text-xl md:text-base text-sm font-bold  ">
