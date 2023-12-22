@@ -24,7 +24,7 @@ const Section2 = () => {
         <div className="bg-[url('/gradient.png')] lg:px-20 md:px-14 px-4 lg:py-16 md:py-10 py-8 flex flex-col " >
             <div className="flex justify-between" >
                 <div className=" text-white lg:text-5xl md:text-3xl text-2xl font-bold inter ">
-                    Work smarter<br />with easy access for user..
+                    Work smarter<br />with easy access for user.
                 </div>
                 <Button className='md:w-40 w-28  rounded-3xl bg-white hover:bg-white text-blue-800 hover:text-blue-800/75 font-semibold md:text-base text-xs' size='default' >
                     Get Started Now
@@ -33,12 +33,12 @@ const Section2 = () => {
             <div className="flex md:flex-row flex-col-reverse justify-between md:pt-20 pt-16 gap-7 lg:gap-0" >
                 <div className="flex flex-col items-center justify-center gap-5" >
                     {boardingPrcoess.map((step) => (
-                        <div key={step.stepName} className="flex  justify-start gap-[10px]  " >
+                        <div key={step.stepName} className="flex  justify-start gap-7  " >
                             <div className="self-center" >
                                 <Image 
                                     src={step.stepImageSrc}
                                     alt="step"
-                                    className="lg:h-20 md:h-[50px] h-10 w-[60px] md:w-auto"
+                                    className="lg:h-16 md:h-[50px] h-10 w-[60px] md:w-auto"
                                 />
                             </div>
                             <div className="flex flex-col justify-start lg:w-[25rem] md:w-72 " >
