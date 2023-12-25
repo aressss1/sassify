@@ -112,7 +112,7 @@ const PricingSection = () => {
                                         </div>
                                     </CardHeader>
                                     <Separator />
-                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[200px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
+                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[240px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
                                         {price.content.map((content) => (
                                             <div key={content} className="flex flex-row items-start gap-1 " >
                                                 <CheckCircle2 />
