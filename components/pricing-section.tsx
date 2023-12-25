@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Card, CardDescription, CardFooter, CardHeader } from "./ui/card";
 import { Separator } from "./ui/separator";
 import { CheckCircle2 } from "lucide-react";
