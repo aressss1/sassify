@@ -3,9 +3,10 @@ import { Card, CardDescription, CardFooter, CardHeader } from "./ui/card";
 import { Separator } from "./ui/separator";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 const PricingSection = () => {
-    const pricingContent = [
+    const pricingContentMonthly = [
         {
             name: "Small Business",
             type: "Pro",
@@ -42,51 +43,139 @@ const PricingSection = () => {
         },
     ]
 
+    const pricingContentAnnualy = [
+        {
+            name: "Small Business",
+            type: "Pro",
+            price: "288",
+            content: [
+                "3 Social profile",
+                "12 Team members",
+                "5 Competitors per profile"
+            ]
+        },
+        {
+            name: "Medium Business",
+            type: "Popular",
+            price: "576",
+            content: [
+                "3 Social profile",
+                "12 Team members",
+                "5 Competitors per profile",
+                "Hashtag per profile"
+            ]
+        },
+        {
+            name: "Enterprise",
+            type: "Advance",
+            price: "960",
+            content: [
+                "3 Social profile",
+                "12 Team members",
+                "5 Competitors per profile",
+                "Hashtag per profile",
+                "3 Social profile",
+                "12 Team members",
+            ]
+        },
+    ]
+
     return (
         <div className="flex flex-col gap-16 lg:px-20 md:px-14 px-4  lg:py-20 md:py-6" >
             <div className="text-center text-black lg:text-5xl md:text-4xl text-2xl font-bold inter capitalize ">
                 Get results first. Pick a plan later.
             </div>
-            <div className="flex md:flex-row justify-center lg:gap-12 gap-4 px-5 pb-10 " >
-                {pricingContent.map((price) => (
-                    <div key={price.name} className="group w-[328px] "  >
-                        <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto " >
-                            <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
-                                <div className=" text-black text-2xl font-bold inter">
-                                    {price.type}
-                                </div>
-                                <div className="text-blue-800 text-6xl font-bold inter leading-10 flex gap-1 ">
-                                    ${price.price}
-                                    <div className="self-end opacity-60 text-black text-base font-medium inter tracking-tight">
-                                        /month
-                                    </div>
-                                </div>
-                                <div className="text-black text-base font-normal inter">
-                                    For {price.name}
-                                </div>
-                            </CardHeader>
-                            <Separator />
-                            <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[200px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
-                                {price.content.map((content) => (
-                                    <div key={content} className="flex flex-row items-start gap-1 " >
-                                        <CheckCircle2 />
-                                        <p className="text-black text-sm font-medium inter tracking-tight" >
-                                            {content}
-                                        </p>
-                                    </div>
-                                ))}
-                            </CardDescription>
-                            <CardFooter className="flex gap-2 justify-center items-center lg:p-6 md:p-4 p-2" >
-                                <Button className='w-36  rounded-3xl  bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white font-semibold md:text-base text-xs' size='default' >
-                                    Get Started
-                                </Button>
-                            </CardFooter>
-                        </Card>
-                    </div>
-                ))}
-            </div>
+            
+            <Tabs defaultValue="monthly" className="w-[400px]">
+                <TabsList>
+                    <TabsTrigger value="monthly">Monthly</TabsTrigger>
+                    <TabsTrigger value="Annualy">Annualy</TabsTrigger>
+                </TabsList>
 
+                <TabsContent value="monthly" >
+                    <div className="flex md:flex-row justify-center lg:gap-12 gap-4 px-5 pb-10 " >
+                        {pricingContentMonthly.map((price) => (
+                            <div key={price.name} className="group w-[328px] "  >
+                                <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto " >
+                                    <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
+                                        <div className=" text-black text-2xl font-bold inter">
+                                            {price.type}
+                                        </div>
+                                        <div className="text-blue-800 text-6xl font-bold inter leading-10 flex gap-1 ">
+                                            ${price.price}
+                                            <div className="self-end opacity-60 text-black text-base font-medium inter tracking-tight">
+                                                /month
+                                            </div>
+                                        </div>
+                                        <div className="text-black text-base font-normal inter">
+                                            For {price.name}
+                                        </div>
+                                    </CardHeader>
+                                    <Separator />
+                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[200px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
+                                        {price.content.map((content) => (
+                                            <div key={content} className="flex flex-row items-start gap-1 " >
+                                                <CheckCircle2 />
+                                                <p className="text-black text-sm font-medium inter tracking-tight" >
+                                                    {content}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </CardDescription>
+                                    <CardFooter className="flex gap-2 justify-center items-center lg:p-6 md:p-4 p-2" >
+                                        <Button className='w-36  rounded-3xl  bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white font-semibold md:text-base text-xs' size='default' >
+                                            Get Started
+                                        </Button>
+                                    </CardFooter>
+                                </Card>
+                            </div>
+                        ))}
+                    </div>
+                </TabsContent>
+
+                <TabsContent value="Annualy" >
+                    <div className="flex md:flex-row justify-center lg:gap-12 gap-4 px-5 pb-10 " >
+                        {pricingContentAnnualy.map((price) => (
+                            <div key={price.name} className="group w-[328px] "  >
+                                <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto " >
+                                    <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
+                                        <div className=" text-black text-2xl font-bold inter">
+                                            {price.type}
+                                        </div>
+                                        <div className="text-blue-800 text-6xl font-bold inter leading-10 flex gap-1 ">
+                                            ${price.price}
+                                            <div className="self-end opacity-60 text-black text-base font-medium inter tracking-tight">
+                                                /annum
+                                            </div>
+                                        </div>
+                                        <div className="text-black text-base font-normal inter">
+                                            For {price.name}
+                                        </div>
+                                    </CardHeader>
+                                    <Separator />
+                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[200px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
+                                        {price.content.map((content) => (
+                                            <div key={content} className="flex flex-row items-start gap-1 " >
+                                                <CheckCircle2 />
+                                                <p className="text-black text-sm font-medium inter tracking-tight" >
+                                                    {content}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </CardDescription>
+                                    <CardFooter className="flex gap-2 justify-center items-center lg:p-6 md:p-4 p-2" >
+                                        <Button className='w-36  rounded-3xl  bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white font-semibold md:text-base text-xs' size='default' >
+                                            Get Started
+                                        </Button>
+                                    </CardFooter>
+                                </Card>
+                            </div>
+                        ))}
+                    </div>
+                </TabsContent>
+            </Tabs >
         </div>
+
     );
 }
 
