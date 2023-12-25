@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 const PricingSection = () => {
     const pricingContentMonthly = [
         {
-            id : 1,
+            id: 1,
             name: "Small Business",
             type: "Pro",
             price: "30",
@@ -19,7 +19,7 @@ const PricingSection = () => {
             ]
         },
         {
-            id : 2,
+            id: 2,
             name: "Medium Business",
             type: "Popular",
             price: "60",
@@ -31,7 +31,7 @@ const PricingSection = () => {
             ]
         },
         {
-            id : 3,
+            id: 3,
             name: "Enterprise",
             type: "Advance",
             price: "100",
@@ -100,7 +100,7 @@ const PricingSection = () => {
                         {pricingContentMonthly.map((price) => (
                             <div key={price.name} className="group w-[328px] "  >
                                 <Card className={` 
-                                ${price.id === 2 ? "bg-[url('/gradient-2.png')" : "bg-white"} 
+                                ${price.id === 2 ? "bg-blue-800" : "bg-white"} 
                                 flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto ` } >
                                     <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
                                         <div className=" text-black text-2xl font-bold inter">
