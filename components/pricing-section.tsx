@@ -100,24 +100,32 @@ const PricingSection = () => {
                         {pricingContentMonthly.map((price) => (
                             <div key={price.name} className="group w-[328px] "  >
                                 <Card className={` 
-                                ${price.id === 2 ? "bg-[url('/gradient.png')]" : "bg-white"} 
+                                ${price.id === 2 ? "bg-[url('/gradient-2.png')]" : "bg-white"} 
                                 flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto ` } >
                                     <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
-                                        <div className=" text-black text-2xl font-bold inter">
+                                        <div className={` ${price.id === 2 ? "bg-white" : "text-black"}  text-2xl font-bold inter `}>
                                             {price.type}
                                         </div>
-                                        <div className="text-blue-800 text-6xl font-bold inter leading-10 flex gap-1 ">
+                                        <div className={`
+                                            ${price.id === 2 ? "bg-white" : "text-blue-800"} 
+                                            text-6xl font-bold inter leading-10 flex gap-1 `}>
                                             ${price.price}
-                                            <div className="self-end opacity-60 text-black text-base font-medium inter tracking-tight">
+                                            <div className={` 
+                                                ${price.id === 2 ? "bg-white" : "text-black"} 
+                                                self-end opacity-60  text-base font-medium inter tracking-tight `}>
                                                 /month
                                             </div>
                                         </div>
-                                        <div className="text-black text-base font-normal inter">
+                                        <div className={
+                                            `${price.id === 2 ? "bg-white" : "text-black"} 
+                                            text-base font-normal inter`}>
                                             For {price.name}
                                         </div>
                                     </CardHeader>
                                     <Separator />
-                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[240px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
+                                    <CardDescription className={` 
+                                        ${price.id === 2 ? "bg-white" : "text-black"}
+                                        w-[213px] md:w-[185px] lg:w-auto h-[240px] flex flex-col gap-3 text-left  lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 `}>
                                         {price.content.map((content) => (
                                             <div key={content} className="flex flex-row items-start gap-1 " >
                                                 <CheckCircle2 />
@@ -128,7 +136,9 @@ const PricingSection = () => {
                                         ))}
                                     </CardDescription>
                                     <CardFooter className="flex gap-2 justify-center items-center lg:p-6 md:p-4 p-2" >
-                                        <Button className='w-36  rounded-3xl  bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white font-semibold md:text-base text-xs' size='default' >
+                                        <Button className={` 
+                                        ${price.id === 2 ? "bg-white text-blue-800  hover:text-blue-800/75 " : "bg-gradient-to-r from-blue-500 to-blue-800 hover:text-white/75  text-white"}
+                                        w-36  rounded-3xl   font-semibold md:text-base text-xs `} size='default' >
                                             Get Started
                                         </Button>
                                     </CardFooter>
