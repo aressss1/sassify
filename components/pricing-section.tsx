@@ -88,7 +88,7 @@ const PricingSection = () => {
 
             <Tabs defaultValue="monthly" className="flex flex-col items-center gap-9" >
                 <TabsList>
-                    <TabsTrigger value="monthly" className="bg-gradient-to-r from-blue-500 to-blue-800 text-white"  >Monthly</TabsTrigger>
+                    <TabsTrigger value="monthly">Monthly</TabsTrigger>
                     <TabsTrigger value="Annualy">Annualy</TabsTrigger>
                 </TabsList>
 
