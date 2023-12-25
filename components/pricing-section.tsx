@@ -128,7 +128,9 @@ const PricingSection = () => {
                                         {price.content.map((content) => (
                                             <div key={content} className="flex flex-row items-start gap-1 " >
                                                 <CheckCircle2 />
-                                                <p className="text-black text-sm font-medium inter tracking-tight" >
+                                                <p className={`
+                                                ${price.id === 2 ? "text-white" : "text-black"}
+                                                text-sm font-medium inter tracking-tight `} >
                                                     {content}
                                                 </p>
                                             </div>
