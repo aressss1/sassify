@@ -85,8 +85,8 @@ const PricingSection = () => {
             <div className="text-center text-black lg:text-5xl md:text-4xl text-2xl font-bold inter capitalize ">
                 Get results first. Pick a plan later.
             </div>
-            
-            <Tabs defaultValue="monthly" className="w-[400px]">
+
+            <Tabs defaultValue="monthly">
                 <TabsList>
                     <TabsTrigger value="monthly">Monthly</TabsTrigger>
                     <TabsTrigger value="Annualy">Annualy</TabsTrigger>
