@@ -49,21 +49,24 @@ const PricingSection = () => {
             </div>
             <div className="flex md:flex-row lg:gap-12 gap-4 px-5 pb-10 " >
                 {pricingContent.map((price) => (
-                    <div key={price.name} className="group" >
+                    <div key={price.name} className="group w-[310px] "  >
                         <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto group-hover:bg-blue-700 group-hover:shadow-2xl " >
                             <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
                                 <div className=" text-black text-2xl font-bold inter">
                                     {price.type}
                                 </div>
-                                <div className="text-blue-800 text-6xl font-bold inter leading-10">
+                                <div className="text-blue-800 text-6xl font-bold inter leading-10 flex ">
                                     ${price.price}
+                                    <div className=" opacity-60 text-black text-base font-medium inter tracking-tight">
+                                        /month
+                                    </div>
                                 </div>
                                 <div className="text-black text-base font-normal inter">
                                     For {price.name}
                                 </div>
                             </CardHeader>
                             <Separator />
-                            <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto text-left text-black group-hover:text-white lg:text-base md:text-sm font-normal inter lg:px-6 md:px-4 px-2 ">
+                            <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[200px] flex flex-col gap-3 text-left text-black group-hover:text-white lg:text-base md:text-sm font-normal inter lg:px-6 md:px-4 px-2 ">
                                 {price.content.map((content) => (
                                     <div key={content} className="flex flex-row items-start gap-1 " >
                                         <CheckCircle2 />
