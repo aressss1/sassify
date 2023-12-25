@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 const PricingSection = () => {
     const pricingContentMonthly = [
         {
+            id : 1,
             name: "Small Business",
             type: "Pro",
             price: "30",
@@ -18,6 +19,7 @@ const PricingSection = () => {
             ]
         },
         {
+            id : 2,
             name: "Medium Business",
             type: "Popular",
             price: "60",
@@ -29,6 +31,7 @@ const PricingSection = () => {
             ]
         },
         {
+            id : 3,
             name: "Enterprise",
             type: "Advance",
             price: "100",
@@ -96,7 +99,9 @@ const PricingSection = () => {
                     <div className="flex md:flex-row justify-center lg:gap-12 gap-4 px-5 pb-10 " >
                         {pricingContentMonthly.map((price) => (
                             <div key={price.name} className="group w-[328px] "  >
-                                <Card className="flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto " >
+                                <Card className={` 
+                                ${price.id === 2 ? "bg-[url('/gradient-2.png')" : "bg-white"} 
+                                flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto ` } >
                                     <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
                                         <div className=" text-black text-2xl font-bold inter">
                                             {price.type}
@@ -153,7 +158,7 @@ const PricingSection = () => {
                                         </div>
                                     </CardHeader>
                                     <Separator />
-                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[200px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
+                                    <CardDescription className=" w-[213px] md:w-[185px] lg:w-auto h-[240px] flex flex-col gap-3 text-left text-black lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 ">
                                         {price.content.map((content) => (
                                             <div key={content} className="flex flex-row items-start gap-1 " >
                                                 <CheckCircle2 />
