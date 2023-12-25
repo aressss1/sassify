@@ -86,9 +86,9 @@ const PricingSection = () => {
                 Get results first. Pick a plan later.
             </div>
 
-            <Tabs defaultValue="monthly">
-                <TabsList>
-                    <TabsTrigger value="monthly">Monthly</TabsTrigger>
+            <Tabs defaultValue="monthly" className="flex items-center gap-9" >
+                <TabsList className="bg-gradient-to-r from-blue-500 to-blue-800 text-white" >
+                    <TabsTrigger value="monthly"  >Monthly</TabsTrigger>
                     <TabsTrigger value="Annualy">Annualy</TabsTrigger>
                 </TabsList>
 
