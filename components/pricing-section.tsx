@@ -100,7 +100,7 @@ const PricingSection = () => {
                         {pricingContentMonthly.map((price) => (
                             <div key={price.name} className="group w-[328px] "  >
                                 <Card className={` 
-                                ${price.id === 2 ? "bg-[url('/gradient.png')" : "bg-white"} 
+                                ${price.id === 2 ? "bg-[url('/gradient.png')]" : "bg-white"} 
                                 flex flex-col gap-4 md:p-2  lg:p-3 p-2  shadow-2xl  rounded-xl h-[275px] md:h-[302px] lg:h-auto ` } >
                                     <CardHeader className="flex flex-col  lg:gap-2 md:gap-0 items-start lg:p-6 p-4" >
                                         <div className=" text-black text-2xl font-bold inter">
