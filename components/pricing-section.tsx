@@ -154,7 +154,7 @@ const PricingSection = () => {
                     </div>
                 </TabsContent>
 
-                <TabsContent value="annually" >
+                <TabsContent value="annualy" >
                     <div className="flex md:flex-row flex-col justify-center lg:gap-12 gap-4 px-5 pb-10" >
                         {pricingContentAnnualy.map((price) => (
                             <div key={price.name} className="group lg:w-[328px] md:w-[200px]"  >
