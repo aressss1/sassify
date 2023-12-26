@@ -38,7 +38,7 @@ const Section2 = () => {
                                 <Image 
                                     src={step.stepImageSrc}
                                     alt="step"
-                                    className="lg:h-16 md:h-[50px] h-10 w-[60px] md:w-auto"
+                                    className="lg:h-16 md:h-[50px] h-9 w-[60px] md:w-auto"
                                 />
                             </div>
                             <div className="flex flex-col justify-start lg:w-[25rem] md:w-72 " >

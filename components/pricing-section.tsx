@@ -86,7 +86,7 @@ const PricingSection = () => {
     ]
 
     return (
-        <div className="flex flex-col gap-16 lg:px-20 md:px-14 px-4  lg:py-20 md:py-6" >
+        <div className="flex flex-col gap-16 lg:px-20 md:px-14 px-4  lg:py-20 md:py-6 py-4 " >
             <div className="text-center text-black lg:text-5xl md:text-4xl text-2xl font-bold inter capitalize ">
                 Get results first. Pick a plan later.
             </div>
