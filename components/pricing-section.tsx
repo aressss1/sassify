@@ -117,7 +117,7 @@ const PricingSection = () => {
                                         </div>
                                         <div className={
                                             `${price.id === 2 ? "text-white" : "text-black"} 
-                                            text-base font-normal inter`}>
+                                            lg:text-base text-sm font-normal inter`}>
                                             For {price.name}
                                         </div>
                                     </CardHeader>
@@ -127,7 +127,7 @@ const PricingSection = () => {
                                         w-[213px] lg:w-auto h-[240px] flex flex-col gap-3 text-left  lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 `}>
                                         {price.content.map((content) => (
                                             <div key={content} className="flex flex-row items-start gap-1 " >
-                                                <CheckCircle2 />
+                                                <CheckCircle2 className="bg-blue-800 rounded-[1.25rem] text-white lg:h-auto lg:w-auto h-5 w-5" />
                                                 <p className={`
                                                 ${price.id === 2 ? "text-white" : "text-black"}
                                                 text-sm font-medium inter tracking-tight `} >
