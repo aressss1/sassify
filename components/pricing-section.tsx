@@ -95,7 +95,7 @@ const PricingSection = () => {
                 </TabsList>
 
                 <TabsContent value="monthly" >
-                    <div className="flex md:flex-row justify-center lg:gap-12 gap-4 px-5 pb-10" >
+                    <div className="flex md:flex-row flex-col justify-center lg:gap-12 gap-4 px-5 pb-10" >
                         {pricingContentMonthly.map((price) => (
                             <div key={price.name} className="group lg:w-[328px] md:w-[200px]"  >
                                 <Card className={` 
@@ -107,11 +107,11 @@ const PricingSection = () => {
                                         </div>
                                         <div className={`
                                             ${price.id === 2 ? "text-white" : "text-blue-800"} 
-                                            lg:text-6xl md:text-4xl font-bold inter leading-10 flex gap-1 `}>
+                                            lg:text-6xl md:text-4xl text-2xl font-bold inter leading-10 flex gap-1 `}>
                                             ${price.price}
                                             <div className={` 
                                                 ${price.id === 2 ? "text-white" : "text-black"} 
-                                                self-end opacity-60  text-base font-medium inter tracking-tight `}>
+                                                md:self-end self-center opacity-60  text-base font-medium inter tracking-tight `}>
                                                 /month
                                             </div>
                                         </div>
@@ -124,10 +124,12 @@ const PricingSection = () => {
                                     <Separator />
                                     <CardDescription className={` 
                                         ${price.id === 2 ? "text-white" : "text-black"}
-                                        w-[213px] lg:w-auto h-[240px] flex flex-col gap-3 text-left  lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 `}>
+                                        w-[213px] lg:w-auto md:h-[240px] flex flex-col md:gap-3 gap-4 text-left  lg:text-base md:text-sm font-normal inter lg:p-6 md:p-4 px-2 `}>
                                         {price.content.map((content) => (
                                             <div key={content} className="flex flex-row items-start gap-1 " >
-                                                <CheckCircle2 className="bg-blue-800 rounded-[1.25rem] text-white lg:h-auto lg:w-auto h-5 w-5" />
+                                                <CheckCircle2 className={` 
+                                                ${price.id === 2 ? "bg-white" : "bg-blue-800"} 
+                                                rounded-[1.25rem] text-white lg:h-auto lg:w-auto h-5 w-5 `} />
                                                 <p className={`
                                                 ${price.id === 2 ? "text-white" : "text-black"}
                                                 text-sm font-medium inter tracking-tight `} >
